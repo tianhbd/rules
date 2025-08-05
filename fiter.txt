@@ -1,1 +1,1 @@
-sogou.com
+*.sogou.com
