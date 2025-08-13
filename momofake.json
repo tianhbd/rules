@@ -10,9 +10,9 @@
       {"query_type": "HTTPS", "action": "reject"},
       {"clash_mode": "direct", "server": "local"},
       {"clash_mode": "global", "server": "foreign"},
-      {"ip_cidr": ["127.0.0.1/32"], "server": "local"},
       {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
-      {"ip_cidr": ["0.0.0.0/0", "!127.0.0.1/32"], "query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
+      {"domain_suffix": [".cn", ".中国", ".公司", ".网络"], "server": "local"},
+      {"query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
     "strategy": "ipv4_only",
