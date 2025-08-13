@@ -7,13 +7,12 @@
       {"tag": "fakeip", "type": "fakeip", "inet4_range": "198.18.0.0/15", "inet6_range": "fc00::/18"}
     ],
     "rules": [
-      {"query_type": "HTTPS", "action": "reject"},
-      {"clash_mode": "direct", "server": "local"},
-      {"clash_mode": "global", "server": "foreign"},
-      {"client_ip": ["127.0.0.1/32"], "rule_set": ["geosite-cn", "geosite-apple"], "server": "local"},
-      {"client_ip": ["127.0.0.1/32"], "server": "foreign"},
-      {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
-      {"client_ip": ["0.0.0.0/0", "!127.0.0.1/32"], "query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
+     {"query_type": "HTTPS", "action": "reject"},
+     {"clash_mode": "direct", "server": "local"},
+     {"clash_mode": "global", "server": "foreign"},
+     {"client_ip": ["127.0.0.1/32"], "server": "local"},
+     {"rule_set": ["geosite-cn", "geosite-steamcn", "geosite-apple"], "server": "local"},
+     {"client_ip": ["0.0.0.0/0", "!127.0.0.1/32"], "query_type": ["A", "AAAA"], "server": "fakeip", "rewrite_ttl": 1}
     ],
     "final": "foreign",
     "strategy": "ipv4_only",
