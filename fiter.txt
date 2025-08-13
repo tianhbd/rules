@@ -1,1 +1,2 @@
 ||sogou.com^
+||sogoucdn.com^
