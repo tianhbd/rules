@@ -1,2 +1,3 @@
-||sogou.com^
-||sogoucdn.com^
+#||sogou.com^
+#||sogoucdn.com^
+/(?i).*sogou.*/
