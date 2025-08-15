@@ -1,3 +1,7 @@
 #||sogou.com^
 #||sogoucdn.com^
 /(?i).*sogou.*/
+||api-ipv4.ip.sb^$dnstype=AAAA
+||api.ip.sb^$dnstype=AAAA
+||api.ipify.org^$dnstype=AAAA
+||myip.ipip.net^$dnstype=AAAA
